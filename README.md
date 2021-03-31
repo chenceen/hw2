@@ -42,7 +42,14 @@ Read in data at rate of 1s/sample, Store them in ADCdata[sample]
 <img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz_wv.png"/>
 <img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz.png"/>
 
-
 185Hz
 
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz_0.1swv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz_5mswv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz.png"/>
+
 400Hz
+
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz_0.1swv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz_2mswv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz.png"/>
