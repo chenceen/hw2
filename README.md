@@ -30,11 +30,35 @@ Connect picoscope to the ouput of generated waveform (after the RC filter).
 
 
 ### 5. Sample
-Read in data at rate of 1s/sample, Store them in ADCdata[sample]
+Read in data at rate of 1s/sample, Store them in ADCdata[sample], and print it.
 
 
 ### 6. Analysis
+Create a new code to analysis
+```
+code FFT.py
+```
+Read an echo string from B_L4S5I_IOT01A terminated with '\n', store the value in y[x] at x=0 to sample.
+Using fft computing and normalization to find absolute value of Y respect to frequency.
+Plot two plots, one with amplitude respect to t, and the other with absolute value of Y respect to frequency.
 
+### 7. Run the program
+```
+sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
+
+```
+view the plot
+```
+sudo python3 FFT.py 
+```
+View the waveform measure by picoscope
+```
+picoscope &
+```
+View the ADCdata[] value
+```
+sudo screen /dev/ttyACM0
+```
 
 ## Result
 1Hz
