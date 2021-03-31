@@ -38,8 +38,9 @@ Read in data at rate of 1s/sample, Store them in ADCdata[sample]
 
 ## Result
 1Hz
-<img width="375" height="150" src="https://github.com/chenceen/hw2/blob/main/hw2_1hz_wv.png"/>
-<img width="375" height="150" src="https://github.com/chenceen/hw2/blob/main/hw2_1hz.png"/>
+
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz_wv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz.png"/>
 
 
 185Hz
