@@ -37,6 +37,10 @@ Read in data at rate of 1s/sample, Store them in ADCdata[sample]
 
 
 ## Result
-```
-[['C0A880', 22.34], ['C0F9A0', 18.88], ['C0G640', 20.770000000000003], ['C0R190', 18.339999999999996], ['C0X260', 18.549999999999997]]
-```
+1Hz
+![image](https://github.com/chenceen/hw2/blob/main/hw2_1hz_wv.png)
+![image](https://github.com/chenceen/hw2/blob/main/hw2_1hz.png)
+
+185Hz
+
+400Hz
