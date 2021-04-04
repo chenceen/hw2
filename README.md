@@ -30,12 +30,50 @@ Connect picoscope to the ouput of generated waveform (after the RC filter).
 
 
 ### 5. Sample
-Read in data at rate of 1s/sample, Store them in ADCdata[sample]
+Read in data at rate of 1s/sample, Store them in ADCdata[sample], and print it.
 
 
 ### 6. Analysis
+Create a new code to analysis
+```
+code FFT.py
+```
+Read an echo string from B_L4S5I_IOT01A terminated with '\n', store the value in y[x] at x=0 to sample.
+Using fft computing and normalization to find absolute value of Y respect to frequency.
+Plot two plots, one with amplitude respect to t, and the other with absolute value of Y respect to frequency.
+
+### 7. Run the program
+```
+sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
+
+```
+view the plot
+```
+sudo python3 FFT.py 
+```
+View the waveform measure by picoscope
+```
+picoscope &
+```
+View the ADCdata[] value
+```
+sudo screen /dev/ttyACM0
+```
 
 ## Result
-```
-[['C0A880', 22.34], ['C0F9A0', 18.88], ['C0G640', 20.770000000000003], ['C0R190', 18.339999999999996], ['C0X260', 18.549999999999997]]
-```
+1Hz
+
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz_wv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_1hz.png"/>
+
+185Hz
+
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz_0.1swv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz_5mswv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_185hz.png"/>
+
+400Hz
+
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz_0.1swv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz_2mswv.png"/>
+<img width="500"  src="https://github.com/chenceen/hw2/blob/main/hw2_400hz.png"/>
